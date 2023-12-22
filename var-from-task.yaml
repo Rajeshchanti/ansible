@@ -6,4 +6,4 @@
         Name: "GOOGLE"
         site: "techytrees"
       ansible.builtin.debug:
-        msg: "Hi {{Name}}, Welcome to {{techytrees}}"
+        msg: "Hi {{Name}}, Welcome to {{site}}"
