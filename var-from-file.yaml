@@ -1,0 +1,8 @@
+- name: variables from files
+  hosts: localhost
+  vars_files:
+    - file.yaml
+  tasks:
+    - name: Inserting vars
+      ansible.builtin.debug:
+        msg: "Hi, {{Name}}, {{Wish}}!! Wellcome to {{Site}}"
