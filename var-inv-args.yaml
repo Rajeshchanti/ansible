@@ -3,4 +3,5 @@
   tasks:
     - name: variables checking
       ansible.builtin.debug:
-        msg: "Hi {{NAME}}, wellcome to {{SITE}}"
+        #msg: "Hi {{NAME}}, wellcome to {{SITE}}" #from args
+        msg: "Hi {{name}}, wellcome to {{site}}"
