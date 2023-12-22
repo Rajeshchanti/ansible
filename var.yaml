@@ -1,6 +1,6 @@
 - name: Variables from PLAY
   hosts: localhost
-  var:
+  vars:
     Fisrt_Name: "Rajesh"
     Second_Name: "Chanti"
     AGE: "29 yrs"

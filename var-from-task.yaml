@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
     - name: Inserting vars
-      var:
+      vars:
         Name: "GOOGLE"
         site: "techytrees"
         ansible.builtin.debug:
