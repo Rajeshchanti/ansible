@@ -1,0 +1,9 @@
+- name: variables from taks level
+  hosts: localhost
+  tasks:
+    - name: Inserting vars
+      var:
+        Name: "GOOGLE"
+        site: "techytrees"
+        ansible.builtin.debug:
+          msg: "Hi {{Name}}, Welcome to {{techytrees}}"

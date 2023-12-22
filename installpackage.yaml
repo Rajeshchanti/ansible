@@ -1,0 +1,14 @@
+- name: install and run nginx
+  hosts: web #from inventory
+  become: yes
+  tasks:
+  - name: install nginx package
+      ansible.builtin.package:
+        name: nginx
+        state: present
+  - name: run the nginx
+      ansible.builtin.service:
+        name: nginx
+        state: started
+
+#run cmd: ansible-playbook -i inventory -e ansible_user=** -e ansible_password=** filename
