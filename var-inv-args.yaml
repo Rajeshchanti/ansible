@@ -1,0 +1,6 @@
+- name: variables from inventory & args
+  hosts: localhost
+  tasks:
+    - name: variables checking
+      ansible.builtin.debug:
+        msg: "Hi {{Name}}, wellcome to {{Site}}"
