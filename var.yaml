@@ -1,10 +1,11 @@
 - name: Variables from PLAY
   hosts: localhost
   vars:
-    Fisrt_Name: "Rajesh"
-    Second_Name: "Chanti"
-    AGE: "29 yrs"
+    Course: "DevOps"
+    Trainer: "Sivakumar"
+    Duration: "110HRS"
   tasks:
-    - name: Inserting Vars
-      ansible.builtin.debug:
-        msg: "Hi, Wellcome {{First_Name}} {{Second_Name}} {{AGE}}"
+  - name: check variables
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
+      
