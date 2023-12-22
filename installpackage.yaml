@@ -10,5 +10,5 @@
       ansible.builtin.service:
         name: nginx
         state: started
-
+        
 #run cmd: ansible-playbook -i inventory -e ansible_user=** -e ansible_password=** filename
